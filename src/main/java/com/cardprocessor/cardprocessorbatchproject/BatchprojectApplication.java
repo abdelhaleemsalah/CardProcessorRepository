@@ -31,7 +31,7 @@ public class BatchprojectApplication {
         SpringApplication.run(BatchprojectApplication.class, args);
     }
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 5000)
     public void reminder() {
 
         webSocketNotificationClient.sendNotificationToUser("superuser", "uploaded File processed successfully");
