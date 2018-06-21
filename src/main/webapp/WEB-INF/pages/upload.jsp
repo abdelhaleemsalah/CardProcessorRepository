@@ -3,7 +3,13 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Card Processing</title>
+    <base href="http://localhost:8080/batchproject/">
+    <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./resources/js/jquery-3.3.1.min.js"></script>
+    <script src="./resources/js/sockjs.min.js"></script>
+    <script src="./resources/js/stomp.min.js"></script>
+    <script src="./resources/js/app.js"></script>
 </head>
 <body>
 <div>
