@@ -11,9 +11,8 @@ public class WebSocketNotificationClient {
     @Autowired
     SimpMessagingTemplate simpMessagingTemplate;
 
-    public void sendNotificationToUser(String message)
+    public void sendNotificationToUser(String merchnatUser, String message)
     {
-        simpMessagingTemplate.setDefaultDestination("/topic/notification");
-        simpMessagingTemplate.convertAndSend(message);
+        simpMessagingTemplate.convertAndSend("/topic/notification/"+merchnatUser ,message );
     }
 }

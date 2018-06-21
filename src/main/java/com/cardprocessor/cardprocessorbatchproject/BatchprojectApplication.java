@@ -34,7 +34,7 @@ public class BatchprojectApplication {
     @Scheduled(fixedRate = 1000)
     public void reminder() {
 
-        webSocketNotificationClient.sendNotificationToUser("hello adry");
+        webSocketNotificationClient.sendNotificationToUser("superuser", "uploaded File processed successfully");
 
     }
 }
