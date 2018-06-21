@@ -1,0 +1,1 @@
+update ececuser.cusr set adm_id='TFRM' where user_type='2'
