@@ -31,5 +31,7 @@ $(function () {
         "showMethod": "fadeIn",
         "hideMethod": "fadeOut"
     }
+
+    $('#html').jstree();
     connect(user);
 });

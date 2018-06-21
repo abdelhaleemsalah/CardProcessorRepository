@@ -7,10 +7,13 @@
     <base href="http://localhost:8080/batchproject/">
     <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="./resources/css/toastr.min.css" rel="stylesheet">
+    <link href="./resources/css/style.min.css" rel="stylesheet">
     <script src="./resources/js/jquery-3.3.1.min.js"></script>
     <script src="./resources/js/sockjs.min.js"></script>
     <script src="./resources/js/stomp.min.js"></script>
     <script src="./resources/js/toastr.min.js"></script>
+    <script src="./resources/js/jstree.min.js"></script>
+
     <script>
         var user = "${merchant}";
     </script>
@@ -50,5 +53,20 @@
     </ul>
 
 </c:if>
+
+<div id="html" class="demo">
+    <ul>
+        <li data-jstree='{ "opened" : true }'>Root node
+            <ul>
+                <li data-jstree='{ "selected" : true }'>Child node 1</li>
+                <li>Child node 2</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+
+
 </body>
 </html>
